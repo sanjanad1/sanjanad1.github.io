@@ -1,0 +1,14 @@
+{"backend_state":"init","connection_file":"/projects/4cd1c004-aa87-4c40-b1fd-5234fe1a4654/.local/share/jupyter/runtime/kernel-3be720db-4c41-4086-b0f0-319613b29168.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"trust":true,"type":"settings"}
+{"cell_type":"code","exec_count":0,"id":"7ca1bd","input":"","pos":7,"type":"cell"}
+{"cell_type":"code","exec_count":0,"id":"b6415b","input":"","pos":10,"type":"cell"}
+{"cell_type":"code","exec_count":0,"id":"b75294","input":"","pos":9,"type":"cell"}
+{"cell_type":"code","exec_count":0,"id":"df994d","input":"","pos":8,"type":"cell"}
+{"cell_type":"code","exec_count":20,"id":"1a2bc8","input":"import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neural_network import MLPClassifier\nfrom sklearn.datasets import make_classification\nfrom sklearn import metrics\n\nX, y = np.arange(10).reshape((5, 2)), range(5)\nprint(f\"x = \\n{X}\")\nprint(f\"y = {y}\")","output":{"0":{"name":"stdout","output_type":"stream","text":"x = \n[[0 1]\n [2 3]\n [4 5]\n [6 7]\n [8 9]]\ny = range(0, 5)\n"}},"pos":0,"type":"cell"}
+{"cell_type":"code","exec_count":39,"id":"9e2fc0","input":"X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)","pos":1,"type":"cell"}
+{"cell_type":"code","exec_count":40,"id":"491165","input":"print(X_train)","output":{"0":{"name":"stdout","output_type":"stream","text":"[[4 5]\n [0 1]\n [6 7]]\n"}},"pos":2,"type":"cell"}
+{"cell_type":"code","exec_count":41,"id":"367c60","input":"print(y_train)","output":{"0":{"name":"stdout","output_type":"stream","text":"[2, 0, 3]\n"}},"pos":3,"type":"cell"}
+{"cell_type":"code","exec_count":42,"id":"b9df0f","input":"print(X_test)","output":{"0":{"name":"stdout","output_type":"stream","text":"[[2 3]\n [8 9]]\n"}},"pos":4,"type":"cell"}
+{"cell_type":"code","exec_count":43,"id":"60ec3a","input":"print(y_test)","output":{"0":{"name":"stdout","output_type":"stream","text":"[1, 4]\n"}},"pos":5,"type":"cell"}
+{"cell_type":"code","exec_count":48,"id":"167f1a","input":"clf = MLPClassifier(hidden_layer_sizes=(10, 8), random_state=1, max_iter=10000000).fit(X_train, y_train)\ny_pred = clf.predict(X_test)\naccuracy = metrics.accuracy_score(y_test, y_pred)\nprint(\"Accuracy: \", accuracy)\nprint(y_test)\nprint(y_pred)","output":{"0":{"name":"stdout","output_type":"stream","text":"Accuracy:  0.0\n[1, 4]\n[0 3]\n"}},"pos":6,"type":"cell"}
+{"id":0,"time":1655479655109,"type":"user"}
+{"last_load":1656079596680,"type":"file"}

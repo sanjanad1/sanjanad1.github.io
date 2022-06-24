@@ -1,0 +1,5 @@
+{"backend_state":"running","connection_file":"/projects/4cd1c004-aa87-4c40-b1fd-5234fe1a4654/.local/share/jupyter/runtime/kernel-5e5a7faa-e5c5-47b8-b366-e4736a14a8e0.json","kernel":"ds_env","kernel_error":"","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"trust":true,"type":"settings"}
+{"end":1656080329544,"exec_count":1,"id":"335a6e","input":"import plotly.graph_objects as go\n\nfig = go.Figure(data=[go.Table(header=dict(values=['Model', 'Accuracy', 'F1', 'Precision', 'Recall']),\n                 cells=dict(values=[['SVM', 'Neural Net', 'Random Forest'], [0.50048, 0.53793, 0.58638], [0.50227, 0.34977, 0.29301], [0.50160, 0.53793, 0.58984], [\n0.50317, 1.0, 0.58224]]))\n                     ])\nfig.show()\nfig.write_html(\"../omni/app/static/Charts/ml_results.html\")","kernel":"ds_env","output":{"0":{"data":{"iframe":"f5bd668c6b9a6e386cd6e4333714821fabc590ef"}}},"pos":0,"start":1656080329211,"state":"done","type":"cell"}
+{"id":"b1acec","input":"","pos":1,"type":"cell"}
+{"id":0,"time":1656080269011,"type":"user"}
+{"last_load":1656004283633,"type":"file"}

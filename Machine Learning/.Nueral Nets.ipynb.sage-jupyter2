@@ -1,0 +1,8 @@
+{"backend_state":"init","kernel":"ds_env","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"trust":true,"type":"settings"}
+{"id":"0fca5e","input":"","pos":2,"state":"done","type":"cell"}
+{"id":"1ee308","input":"","pos":3,"state":"done","type":"cell"}
+{"id":"241173","input":"from sklearn.neural_network import MLPClassifier\n\n","pos":0,"state":"done","type":"cell"}
+{"id":"34e032","input":"","pos":4,"state":"done","type":"cell"}
+{"id":"4d5889","input":"","pos":1,"state":"done","type":"cell"}
+{"id":0,"time":1655314369570,"type":"user"}
+{"last_load":1655314279399,"type":"file"}
